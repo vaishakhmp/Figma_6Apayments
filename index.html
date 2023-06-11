@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6A Payments</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div class="leftHead">
+            <img src="svg/frame-2.svg" class="logo" alt="grave site logo">
+            <h2>Grave Sites Management</h2>
+        </div>
+        <div class="middleHead">
+            <div class="nav maintain">
+                <img src="svg/maintain.svg" class="logoMid " alt="maintain icon">
+                <p class="maintainIcon"> Maintain</p>
+                <img src="svg/chevron-down.svg" class="logoMidMist" alt="dropdown icon">
+            </div>
+            <div class="nav payments">
+                <img src="svg/payments.svg" class="logoMid" alt="payments icon">
+                <p>Payments</p>
+            </div>
+            <div class="nav">
+                <img src="svg/reports.svg" class="logoMid" alt="reports icon">
+                <p>Reports</p>
+            </div>
+        </div>
+        <div class="rightHead">
+            <img src="svg/search.svg" class="logoMid" alt="search icon">
+            <img src="svg/setup.svg" class="logoMid" alt="settings icon">
+            <img src="svg/help.svg" class="logoMidQuest" style="margin-top: 8px;" alt="help icon">
+            <img src="svg/js.svg" class="logoMid" alt="profile icon">
+            <div class="user">
+                <p>John Snow</p>
+                <p id="designation">Municipality Officer</p>
+            </div>
+            <img src="svg/chevron-down.svg" class="logoMid" alt="dropdown icon">
+        </div>
+    </header>
+
+    <section>
+        <div class="sec-section">
+            <h1>Payments</h1>
+            <div class="text-button">
+                <input id="text-box" type="text" placeholder="&#xF002;  Search by reciept, grave site, payor" style="font-family:Arial, FontAwesome" />
+                <button id="button_1"><b><img src="svg/filter.svg"> Filter</b></button>
+                <button id="button_2"><b>+Payment</b></button>
+            </div>
+        </div>
+        <div class="ti2">
+            <h3>3 Payments have not yet been posted</h3>
+            <p id="p1"><img src="svg/align-left.svg"> Preview Posting Results</p>
+            <hr>
+            <span id="cross" style='font-size: 20px;'>&#9747;</span>
+        </div>
+    </section>
+
+    <table>
+        <tr>
+            <th><img src="svg/checkbox.svg"></th>
+            <th>Receipt</th>
+            <th>Status</th>
+            <th>Date Paid <img src="svg/arrow-up.svg" alt="arrow-up"></th>
+            <th>Grave Site</th>
+            <th>Paid By</th>
+            <th>No.of Payment</th>
+            <th>Total</th>
+            <th><img src="svg/column_settings.svg"></th>
+        </tr>
+        <tr>
+            <td><img src="svg/checkbox.svg"></td>
+            <td>1234</td>
+            <td><a href="#" class="button1">Unposted</a></td>
+            <td>01/23/2023</td>
+            <td>01-1001-03.0</td>
+            <td>Lorraine & Russ Stewart</td>
+            <td>2</td>
+            <td>$50</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td><img src="svg/checkbox.svg"></td>
+            <td>1233</td>
+            <td><a href="#" class="button1">Unposted</a></td>
+            <td>01/23/2023</td>
+            <td>01-1001-05.0</td>
+            <td>Marley Aminoff</td>
+            <td>3</td>
+            <td>$100</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td><img src="svg/checkbox.svg"></td>
+            <td>1232</td>
+            <td><a href="#" class="button1">Unposted</a></td>
+            <td>01/23/2023</td>
+            <td>01-1002-05.0</td>
+            <td>Emery Dias</td>
+            <td>1</td>
+            <td>$50</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td><img src="svg/checkbox.svg"></td>
+            <td>1231</td>
+            <td><a href="#" class="button2">Posted</a></td>
+            <td>01/22/2023</td>
+            <td>01-1002-03.0</td>
+            <td>Zaire Levin</td>
+            <td>3</td>
+            <td>$50</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td><img src="svg/checkbox.svg"></td>
+            <td>1230</td>
+            <td><a href="#" class="button2">Posted</a></td>
+            <td>01/22/2023</td>
+            <td>01-1002-02.0</td>
+            <td>Hanna Geidt</td>
+            <td>1</td>
+            <td>$50</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td><img src="svg/checkbox.svg"></td>
+            <td>1229</td>
+            <td><a href="#" class="button2">Posted</a></td>
+            <td>01/17/2023</td>
+            <td>01-1002-02.0</td>
+            <td>Haylie Herwitz</td>
+            <td>1</td>
+            <td>$50</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td><img src="svg/checkbox.svg"></td>
+            <td>1228</td>
+            <td><a href="#" class="button2">Posted</a></td>
+            <td>01/17/2023</td>
+            <td>01-1001-04.0</td>
+            <td>Desirae Levin</td>
+            <td>1</td>
+            <td>$50</td>
+            <td>...</td>
+        </tr>
+        <tr><td><img src="svg/checkbox.svg"></td>
+            <td>1227</td>
+            <td><a href="#" class="button2">Posted</a></td>
+            <td>01/16/2023</td>
+            <td>01-1001-03.1</td>
+            <td>Lincoln Philips</td>
+            <td>1</td>
+            <td>$50</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td><img src="svg/checkbox.svg"></td>
+            <td>1226</td>
+            <td><a href="#" class="button2">Posted</a></td>
+            <td>01/17/2023</td>
+            <td>01-1001-04.0</td>
+            <td>Desirae Levin</td>
+            <td>1</td>
+            <td>$50</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td><img src="svg/checkbox.svg"></td>
+            <td>1225</td>
+            <td><a href="#" class="button2">Posted</a></td>
+            <td>01/16/2023</td>
+            <td>01-1001-03.1</td>
+            <td>Lincoln Philips</td>
+            <td>1</td>
+            <td>$50</td>
+            <td>...</td>
+        </tr>
+    </table>    
+    <button class="bt3">Display 10/page <img src="svg/chev-downg.svg" alt="down icon"></button>
+    <a href="#" class="chev-btn2"><img src="svg/chev-right.svg" alt="chev-right-btn"></a>
+    <a href="#" class="num-btn24">24</a>
+    <a href="#" class="num-btn23">23</a>
+    <p class="num-btn0">...</p>
+    <a href="#" class="num-btn2">2</a>
+    <a href="#" class="num-btn1">1</a>
+    <a href="#" class="chev-btn"><img src="svg/chev-left.svg" alt="chev-left-btn"></a>  
+    <footer>
+        <ul class="f1">
+            <li>©</li>
+            <li>2023 Company</li>
+        </ul>
+        <ul class="right-align">
+            <li>About</li>
+            <li>Terms of use</li>
+            <li>Contact Us</li>
+        </ul>
+    </footer>
+</body>
+</html>
